@@ -44,7 +44,7 @@ export default function NotesClient() {
           }}
         />
         {data && data.totalPages > 1 && (
-          <Pagination page={page} totalPages={data.totalPages} onPageChange={setPage} />
+          <Pagination currentPage={page} totalPages={data.totalPages} onPageChange={setPage} />
         )}
         <button className={css.button} type="button" onClick={() => setOpen(true)}>
           Create note +

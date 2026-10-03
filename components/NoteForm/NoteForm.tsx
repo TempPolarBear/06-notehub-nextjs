@@ -12,13 +12,13 @@ const schema: Yup.ObjectSchema<CreateNotePayload> = Yup.object({
   tag: Yup.mixed<NoteTag>().oneOf(tags).required(),
 });
 const initialValues: CreateNotePayload = { title: '', content: '', tag: 'Todo' };
-export default function NoteForm({
-  onCancel,
-  onSuccess,
-}: {
+
+interface NoteFormProps {
   onCancel: () => void;
   onSuccess: () => void;
-}) {
+}
+
+export default function NoteForm({ onCancel, onSuccess }: NoteFormProps) {
   const client = useQueryClient();
   const mutation = useMutation({
     mutationFn: createNote,
