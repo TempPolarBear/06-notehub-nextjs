@@ -21,7 +21,9 @@ export default function NoteDetailsClient() {
           </div>
           <p className={css.tag}>{note.tag}</p>
           <p className={css.content}>{note.content}</p>
-          <p className={css.date}>Created: {new Date(note.createdAt).toLocaleString()}</p>
+          <p className={css.date}>
+            Created: {new Date(note.createdAt).toLocaleString('en-GB', { timeZone: 'UTC' })} UTC
+          </p>
         </div>
       </div>
     </main>
