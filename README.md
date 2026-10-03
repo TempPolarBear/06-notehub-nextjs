@@ -1,13 +1,13 @@
 # NoteHub
 
-Приложение для просмотра, поиска, создания и удаления личных заметок, построенное на Next.js.
+A Next.js application for viewing, searching, creating, and deleting personal notes.
 
 ## Features
 
-- Список заметок с поиском, пагинацией и созданием новой заметки
-- Удаление заметок и просмотр деталей по отдельному маршруту
-- Предзагрузка данных на сервере и гидратация TanStack Query на клиенте
-- Обработка состояний загрузки и ошибок для страниц заметок
+- Notes list with search, pagination, and note creation
+- Note deletion and detail pages on a dedicated route
+- Server-side data prefetching and client-side TanStack Query hydration
+- Loading and error states for note pages
 
 ## Technologies
 
